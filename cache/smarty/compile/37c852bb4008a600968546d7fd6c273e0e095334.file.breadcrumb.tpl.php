@@ -1,0 +1,43 @@
+<?php /* Smarty version Smarty-3.1.8, created on 2013-12-15 00:03:35
+         compiled from "C:\Users\macbookpro\Documents\xampp\htdocs\prestashop123\themes\theme481\breadcrumb.tpl" */ ?>
+<?php /*%%SmartyHeaderCode:239352ac8f671d8096-88380843%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+$_valid = $_smarty_tpl->decodeProperties(array (
+  'file_dependency' => 
+  array (
+    '37c852bb4008a600968546d7fd6c273e0e095334' => 
+    array (
+      0 => 'C:\\Users\\macbookpro\\Documents\\xampp\\htdocs\\prestashop123\\themes\\theme481\\breadcrumb.tpl',
+      1 => 1363052636,
+      2 => 'file',
+    ),
+  ),
+  'nocache_hash' => '239352ac8f671d8096-88380843',
+  'function' => 
+  array (
+  ),
+  'variables' => 
+  array (
+    'base_dir' => 0,
+    'path' => 0,
+    'navigationPipe' => 0,
+  ),
+  'has_nocache_code' => false,
+  'version' => 'Smarty-3.1.8',
+  'unifunc' => 'content_52ac8f67200f16_92284074',
+),false); /*/%%SmartyHeaderCode%%*/?>
+<?php if ($_valid && !is_callable('content_52ac8f67200f16_92284074')) {function content_52ac8f67200f16_92284074($_smarty_tpl) {?><?php if (!is_callable('smarty_modifier_escape')) include 'C:\\Users\\macbookpro\\Documents\\xampp\\htdocs\\prestashop123\\tools\\smarty\\plugins\\modifier.escape.php';
+?><!-- Breadcrumb -->
+<?php if (isset(Smarty::$_smarty_vars['capture']['path'])){?><?php $_smarty_tpl->tpl_vars['path'] = new Smarty_variable(Smarty::$_smarty_vars['capture']['path'], null, 0);?><?php }?>
+<div class="breadcrumb bordercolor">
+<div class="breadcrumb_inner">
+	<a href="<?php echo $_smarty_tpl->tpl_vars['base_dir']->value;?>
+" title="<?php echo smartyTranslate(array('s'=>'return to'),$_smarty_tpl);?>
+ <?php echo smartyTranslate(array('s'=>'Home'),$_smarty_tpl);?>
+"><?php echo smartyTranslate(array('s'=>'Home'),$_smarty_tpl);?>
+</a><?php if (isset($_smarty_tpl->tpl_vars['path']->value)&&$_smarty_tpl->tpl_vars['path']->value){?><span class="navigation-pipe"><?php echo smarty_modifier_escape($_smarty_tpl->tpl_vars['navigationPipe']->value, 'html', 'UTF-8');?>
+</span><?php if (!strpos($_smarty_tpl->tpl_vars['path']->value,'span')){?><span class="navigation_page"><?php echo $_smarty_tpl->tpl_vars['path']->value;?>
+</span><?php }else{ ?><?php echo $_smarty_tpl->tpl_vars['path']->value;?>
+<?php }?><?php }?>
+</div>
+</div>
+<!-- /Breadcrumb --><?php }} ?>
